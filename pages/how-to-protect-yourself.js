@@ -9,9 +9,9 @@ import {
   Divider,
   Link,
 } from '@chakra-ui/react';
-import Dalle1 from '/dalle1.png';
-import Dalle2 from '/dalle2.png';
-import Dalle3 from '/dalle3.png'
+import Dalle1 from '../public/dalle1.png';
+import Dalle2 from '../public/dalle2.png';
+import Dalle3 from '../public/dalle3.png'
 import Image from 'next/image';
 
 function Blog() {
