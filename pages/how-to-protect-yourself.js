@@ -4,12 +4,15 @@ import {
   Container,
   Heading,
   Text,
-  Image,
   UnorderedList,
   ListItem,
   Divider,
   Link,
 } from '@chakra-ui/react';
+import Dalle1 from '/dalle1.png';
+import Dalle2 from '/dalle2.png';
+import Dalle3 from '/dalle3.png'
+import Image from 'next/image';
 
 function Blog() {
   return (
@@ -18,7 +21,7 @@ function Blog() {
         How to Protect Yourself from Phishing Attacks in 2023?
       </Heading>
       <Text mb={4}>
-        In today's fast-changing digital world, it's crucial to protect your online activities. A staggering <strong>90%</strong> of phishing attacks are now executed via WhatsApp while <strong>97%</strong> of people can’t identify phishing emails, showcasing a drastic shift in the tactics of cybercriminals.
+        In today&apos;s fast-changing digital world, it&apos;s crucial to protect your online activities. A staggering <strong>90%</strong> of phishing attacks are now executed via WhatsApp while <strong>97%</strong> of people can&apos;t identify phishing emails, showcasing a drastic shift in the tactics of cybercriminals.
       </Text>
       <Text mb={4}>
         Additionally, the early months of 2023 saw a <Link href="https://contentdetector.ai/articles/phishing-attack-statistics" isExternal color="blue.500"><strong>464% increase in email scams</strong></Link> compared to 2022, with <strong>92%</strong> of companies falling prey to phishing attacks in the previous year. These facts highlight just how important it is to have strong online security.
@@ -28,7 +31,7 @@ function Blog() {
         Learn And Share Knowledge
     </Heading>
         {/* ... */}
-    <img src="/dalle1.png" width={"100%"} height={500}/>
+    <Image src={Dalle1}/>
     <Text mt={2}>Understanding the many different ways phishing can happen is the first step to protecting yourself. Knowing more helps you a lot, and when you share this knowledge, it makes everyone safer.</Text>
     <Heading as="h3" size="md" mb={5} mt={8}>
         Identify Phishing Tactics
@@ -46,7 +49,8 @@ function Blog() {
     <Heading as="h2" size="lg" mt={8} mb={2}>
         Strengthen Your Online Security
     </Heading>
-    <img src="/dalle2.png" width={"100%"} height={500}/>
+    <Image src={Dalle2}/>
+    {/* <Image src="/dalle2.png" width={"100%"} height={500}/> */}
     <Text mb={4} mt={3}>Keeping safe online is very important. Having strong, different passwords, using extra security steps like Multi-Factor Authentication, and keeping your security software updated are like wearing armor to protect yourself on the internet.</Text>
         {/* ... */}
     <UnorderedList mb={4}>
@@ -61,22 +65,23 @@ function Blog() {
     <Heading as="h2" size="lg" mb={4} mt={8}>
         Think Before You Click
     </Heading>
-    <img src="/dalle3.png" width={"100%"} height={600}/>
+    <Image src={Dalle3}/>
+    {/* <Image src="/dalle3.png" width={"100%"} height={600}/> */}
     <Text mb={4} mt={3}>Being careful is important. Emails and messages are often used for phishing attacks, and being cautious can really help keep you safe.</Text>
     <Heading as="h3" size="md" mb={4} mt={7}>
-        Verify Sender’s Identity
+        Verify Sender&apos;s Identity
     </Heading>
         {/* ... */}
     <UnorderedList mb={4}>
         <ListItem mb={2}><strong>Call Them:</strong> If you get an email from your bank and it looks strange, call your bank with the number you have, not the one in the email, and ask if they sent you an email.</ListItem>
-        <ListItem mb={2}><strong>Use Official Websites:</strong> If an email says it's from a company but looks suspicious, go to the company's official website by typing it in your browser (like going to apple.com), and call the contact number listed there to check if they really sent the email.</ListItem>
+        <ListItem mb={2}><strong>Use Official Websites:</strong> If an email says it&apos;s from a company but looks suspicious, go to the company&apos;s official website by typing it in your browser (like going to apple.com), and call the contact number listed there to check if they really sent the email.</ListItem>
     </UnorderedList>
         {/* ... */}
 
     <Heading as="h3" size="md" mb={2} mt={8}>
         Avoid Unknown Links And Attachments
     </Heading>
-    <Text mb={3}>Don’t download attachments or click on links unless you are certain of their safety.</Text>
+    <Text mb={3}>Don&apos;t download attachments or click on links unless you are certain of their safety.</Text>
     <UnorderedList mb={7}>
         <ListItem mb={2}><strong>Check for Red Flags:</strong> Look out for spelling mistakes, generic greetings, and other signs that an email might not be legitimate.</ListItem>
     </UnorderedList>
@@ -166,7 +171,7 @@ function Blog() {
         Conclusion
       </Heading>
       <Text mb={4}>
-        Staying safe online is very important. We talked about many ways to protect yourself from fake messages and emails. Remember, always check if something looks strange, and don’t click on links if you are not sure. Share what you know about staying safe with your friends and family. Keeping yourself safe on the internet is like an ongoing project. By using these suggestions, you're building a stronger shield for your online activities.
+        Staying safe online is very important. We talked about many ways to protect yourself from fake messages and emails. Remember, always check if something looks strange, and don’t click on links if you are not sure. Share what you know about staying safe with your friends and family. Keeping yourself safe on the internet is like an ongoing project. By using these suggestions, you&apos;re building a stronger shield for your online activities.
       </Text>
     </Container>
   );
